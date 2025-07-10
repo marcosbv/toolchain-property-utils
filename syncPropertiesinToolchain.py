@@ -72,4 +72,6 @@ for propertyToSync in propertiesToSync:
               newValue={properties_from_first_pipeline[propertyToSync]['value']}""")
         tool_service.replace_tekton_pipeline_property(pipeline_id=pipeline_id_second, 
                                                       name=properties_from_second_pipeline[propertyToSync]['name'],
+                                                      property_name=properties_from_second_pipeline[propertyToSync]['name'],
+                                                      type=properties_from_second_pipeline[propertyToSync]['type'],
                                                       value=properties_from_first_pipeline[propertyToSync]['value'])
