@@ -6,9 +6,9 @@ from ibm_continuous_delivery import CdToolchainV2, CdTektonPipelineV2
 resource_group_id=os.getenv('RG', '3259d0bd537a4637906824892ef935ac')
 
 service_url_base=os.getenv('SERVICE_URL_BASE', 'https://api.br-sao.devops.cloud.ibm.com')
-toolchain_name_first=sys.argv[1]#'npr-br-sao-chile-ap10328-parametrosautoms-cci'
-toolchain_name_second=sys.argv[2]#'npr-br-sao-chile-ap10328-parametrosautoms-cci-v8'
-pipeline_name_first=sys.argv[3]#'ci-pipeline'
+toolchain_name_first=sys.argv[1]
+toolchain_name_second=sys.argv[2]
+pipeline_name_first=sys.argv[3]
 
 propertiesToSync=sys.argv[4].split(",")
 
