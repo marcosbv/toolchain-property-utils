@@ -1,0 +1,14 @@
+[
+    {
+        "name" : "source-environment",
+        "value" : "master"
+    },
+    {
+        "name" : "target-environment",
+        "value" : "qa"
+    },
+    {
+        "name" : "target-environment-detail",
+        "value" : "QA"
+    }
+]

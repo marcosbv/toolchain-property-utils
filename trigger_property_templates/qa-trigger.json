@@ -1,0 +1,18 @@
+[
+    {
+        "name" : "code-engine-project",
+        "value" : "**INSERT**"
+    },
+    {
+        "name" : "source-environment",
+        "value" : "master"
+    },
+    {
+        "name" : "target-environment",
+        "value" : "qa"
+    },
+    {
+        "name" : "target-environment-detail",
+        "value" : "QA"
+    }
+]
