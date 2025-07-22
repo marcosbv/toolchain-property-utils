@@ -1,5 +1,5 @@
 ###
-## Usage: python3 duplicatePipelineSteps {Toolchain_Name} {Pipeline_Name} "{Comma-Delimited_List_Steps_To_Duplicate}" {Environment_Name} {Properties_File_Template}
+## Usage: python3 duplicatePipelineTriggers.py {Toolchain_Name} {Pipeline_Name} "{Comma-Delimited_List_Steps_To_Duplicate}" {Environment_Name} {Properties_File_Template}
 ###
 
 import os
