@@ -6,7 +6,8 @@
 ######
 
 export IBMCLOUD_TOKEN=$(ibmcloud iam oauth-tokens|grep Bearer|cut -d ' ' -f5)
-export RG=$(ibmcloud resource groups | grep $1 | cut -c 33-64)
+export RG_LINE=$(ibmcloud resource groups | grep -E "^$1")
+export RG=$(python3 get_rg_id.py "$RG_LINE")
 
 echo "Environment Variables ready. You can use the following Python commands to analyze your pipelines:"
 echo "python3 comparePropertiesInToolchain.py {Toolchain_1} {Toolchain_2} {Pipeline_Name}"
